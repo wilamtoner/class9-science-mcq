@@ -3,12 +3,35 @@ import { Bookmark, CheckCircle2, XCircle, HelpCircle, ArrowLeft, ArrowRight, Clo
 import { getAllQuestions } from '../utils/questionsStore';
 import { CHAPTERS } from '../data/chapters';
 
-// Utility function to shuffle an array (Fisher-Yates)
-const shuffleArray = (array) => {
+// Cryptographically strong random integer generator in range [0, max - 1]
+const getRandomInt = (max) => {
+  if (max <= 1) return 0;
+  const cryptoObj = typeof window !== 'undefined' ? (window.crypto || window.msCrypto) : null;
+  if (cryptoObj && cryptoObj.getRandomValues) {
+    const randomBuffer = new Uint32Array(1);
+    const maxUint = 4294967295;
+    const limit = maxUint - (maxUint % max);
+    let val;
+    do {
+      cryptoObj.getRandomValues(randomBuffer);
+      val = randomBuffer[0];
+    } while (val >= limit);
+    return val % max;
+  }
+  return Math.floor(Math.random() * max);
+};
+
+// Cryptographically secure multi-pass Fisher-Yates shuffle
+const cryptoShuffle = (array) => {
   const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
+  if (arr.length <= 1) return arr;
+
+  // 3-pass Fisher-Yates shuffle for maximum entropy & complete unpredictability
+  for (let pass = 0; pass < 3; pass++) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = getRandomInt(i + 1);
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
   }
   return arr;
 };
@@ -24,7 +47,7 @@ const randomizeQuestionOptions = (question) => {
     isCorrect: index === question.correctAnswer
   }));
 
-  const shuffledOptions = shuffleArray(optionsWithMeta);
+  const shuffledOptions = cryptoShuffle(optionsWithMeta);
   const newOptions = shuffledOptions.map(item => item.text);
   const newCorrectAnswer = shuffledOptions.findIndex(item => item.isCorrect);
 
@@ -62,8 +85,8 @@ export default function QuizEngine({
       pool = pool.filter(q => quizConfig.questionIds.includes(q.id));
     }
 
-    // Shuffle questions for variety using Fisher-Yates
-    const shuffledPool = shuffleArray(pool);
+    // Cryptographically shuffle questions for variety using multi-pass Fisher-Yates
+    const shuffledPool = cryptoShuffle(pool);
     const selectedList = shuffledPool.slice(0, quizConfig.limit || 15);
 
     // Randomize answer options for each question
