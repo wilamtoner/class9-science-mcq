@@ -1,22 +1,25 @@
 import React, { useState, useMemo } from 'react';
 import { Search, BookOpen, Play, CheckCircle, Sparkles, Zap, Flame, Dna, Atom, Orbit, Microscope, Wheat, Activity, Globe, Volume2 } from 'lucide-react';
-import { CHAPTERS, SUBJECTS } from '../data/chapters';
-import { getAllQuestions } from '../utils/questionsStore';
+import { getChapters, getAllQuestions } from '../utils/questionsStore';
+import { SUBJECTS } from '../data/chapters';
 
-export default function ChapterList({ onStartQuiz }) {
+export default function ChapterList({ onStartQuiz, selectedClass }) {
   const [selectedSubject, setSelectedSubject] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const questions = useMemo(() => getAllQuestions(), []);
+  const activeClass = selectedClass || 9;
+
+  const questions = useMemo(() => getAllQuestions(activeClass), [activeClass]);
+  const chaptersList = useMemo(() => getChapters(activeClass), [activeClass]);
 
   const getChapterQuestionCount = (chapterId) => {
     return questions.filter(q => q.chapterId === chapterId).length;
   };
 
-  const filteredChapters = CHAPTERS.filter((ch) => {
+  const filteredChapters = chaptersList.filter((ch) => {
     const matchesSubject = selectedSubject === 'all' || ch.subject.toLowerCase() === selectedSubject.toLowerCase();
     const matchesSearch = ch.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          ch.description.toLowerCase().includes(searchQuery.toLowerCase());
+                          (ch.description || '').toLowerCase().includes(searchQuery.toLowerCase());
     return matchesSubject && matchesSearch;
   });
 

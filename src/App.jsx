@@ -8,12 +8,23 @@ import ResultView from './components/ResultView';
 import AnalyticsView from './components/AnalyticsView';
 import BookmarksView from './components/BookmarksView';
 import AdminPanel from './components/AdminPanel';
+import ClassSelector from './components/ClassSelector';
 
-import { getSettings, saveSettings, getBookmarks, toggleBookmark, getAggregateStats, saveQuizResult } from './utils/storage';
+import { 
+  getSettings, 
+  saveSettings, 
+  getBookmarks, 
+  toggleBookmark, 
+  getAggregateStats, 
+  saveQuizResult,
+  getSelectedClass,
+  saveSelectedClass
+} from './utils/storage';
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
   const [activeTab, setActiveTab] = useState('home'); // 'home' | 'chapters' | 'quiz' | 'bookmarks' | 'analytics' | 'admin'
+  const [selectedClass, setSelectedClass] = useState(null); // null means ClassSelector is shown first
   const [activeQuizConfig, setActiveQuizConfig] = useState(null); // when in quiz mode
   const [latestResult, setLatestResult] = useState(null); // when in result view
   const [bookmarks, setBookmarks] = useState([]);
@@ -24,6 +35,11 @@ export default function App() {
     setTheme(initialSettings.theme || 'dark');
     document.documentElement.setAttribute('data-theme', initialSettings.theme || 'dark');
 
+    const savedClass = getSelectedClass();
+    if (savedClass) {
+      setSelectedClass(savedClass);
+    }
+
     setBookmarks(getBookmarks());
     setStats(getAggregateStats());
   }, []);
@@ -33,6 +49,11 @@ export default function App() {
     setTheme(nextTheme);
     document.documentElement.setAttribute('data-theme', nextTheme);
     saveSettings({ theme: nextTheme });
+  };
+
+  const handleSelectClass = (cls) => {
+    setSelectedClass(cls);
+    saveSelectedClass(cls);
   };
 
   const handleToggleBookmark = (questionId) => {
@@ -72,6 +93,11 @@ export default function App() {
     setBookmarks(getBookmarks());
   };
 
+  // If no class is selected yet, show the class selection landing screen
+  if (selectedClass === null) {
+    return <ClassSelector onSelectClass={handleSelectClass} />;
+  }
+
   // Determine current active view
   const isQuizActive = !!activeQuizConfig;
   const isResultActive = !!latestResult;
@@ -81,7 +107,13 @@ export default function App() {
       
       {/* Show header unless in quiz engine or result view */}
       {!isQuizActive && !isResultActive && (
-        <Header theme={theme} onToggleTheme={handleToggleTheme} onOpenAdmin={() => setActiveTab('admin')} />
+        <Header 
+          theme={theme} 
+          onToggleTheme={handleToggleTheme} 
+          onOpenAdmin={() => setActiveTab('admin')} 
+          selectedClass={selectedClass}
+          onChangeClass={handleSelectClass}
+        />
       )}
 
       {/* Main Screen Content */}
@@ -93,6 +125,7 @@ export default function App() {
             onToggleBookmark={handleToggleBookmark}
             onFinishQuiz={handleFinishQuiz}
             onExitQuiz={handleExitQuiz}
+            selectedClass={selectedClass}
           />
         ) : isResultActive ? (
           <ResultView
@@ -109,11 +142,12 @@ export default function App() {
                 onNavigate={setActiveTab}
                 stats={stats}
                 bookmarkCount={bookmarks.length}
+                selectedClass={selectedClass}
               />
             )}
 
             {activeTab === 'chapters' && (
-              <ChapterList onStartQuiz={handleStartQuiz} />
+              <ChapterList onStartQuiz={handleStartQuiz} selectedClass={selectedClass} />
             )}
 
             {activeTab === 'quiz' && (
@@ -124,6 +158,7 @@ export default function App() {
                   onNavigate={setActiveTab}
                   stats={stats}
                   bookmarkCount={bookmarks.length}
+                  selectedClass={selectedClass}
                 />
               </div>
             )}

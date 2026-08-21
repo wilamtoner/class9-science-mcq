@@ -9,7 +9,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'भेटेनरी पेसा जनावरहरूको स्वास्थ्य र उपचारसँग सम्बन्धित भएकाले यो जीव विज्ञान (Biology) को शाखा हो।',
     hint: 'यो जनावरहरूसँग सम्बन्धित छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q1_2',
@@ -20,7 +21,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'ग्रेगोर मेन्डललाई आनुवंशिकी (Genetics) को पिता मानिन्छ, जुन जीव विज्ञानको एक महत्वपूर्ण क्षेत्र हो।',
     hint: 'उनले केराउको बोटमा अनुसन्धान गरेका थिए।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q1_3',
@@ -31,7 +33,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'साधारण मिटर स्केलमा सबैभन्दा सानो भाग १ मिलिमिटर (0.1 cm) हुन्छ, त्यसैले यसको न्यूनतम नाप १ मिमी हो।',
     hint: 'स्केलको सबैभन्दा सानो धर्काको मान।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q1_4',
@@ -42,7 +45,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: '0.000024 लाई वैज्ञानिक सङ्केतमा लेख्दा दशमलवलाई ५ स्थान दायाँ सार्नुपर्छ, जसले २.४ × १०^-५ दिन्छ।',
     hint: 'दशमलवलाई पहिलो गैर-शून्य अंकको दायाँतिर सार्नुहोस्।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
 
   // --- CHAPTER 2: सजीवहरूको वर्गीकरण (Biology) ---
@@ -55,7 +59,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'ब्लुग्रिन अल्गी (सायनोब्याक्टेरिया) एक प्रोकारियोटिक जीव हो, त्यसैले यो मोनेरा जगत्मा पर्छ।',
     hint: 'यो प्रोकारियोटिक एककोषीय जीव हो।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q2_2',
@@ -66,7 +71,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'युग्लिनामा हरितकण (Chloroplast) हुन्छ जसले गर्दा यसले प्रकाश संश्लेषण गर्न सक्छ, र यसमा जन्तु जस्तै चल्ने सिलिया/फ्ल्याजेला पनि हुन्छ।',
     hint: 'यसले घाममा आफ्नो खाना आफैं बनाउन सक्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q2_3',
@@ -77,7 +83,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'कारोलस लिनियस (Carolus Linnaeus) ले सजीवहरूको वैज्ञानिक नामकरणका लागि पहिलो पटक दुई नामकरण पद्धति प्रतिपादन गरेका हुन्।',
     hint: 'उनलाई "Father of Taxonomy" भनिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q2_4',
@@ -88,7 +95,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'मोनेरा जगत्का जीवहरू (जस्तै ब्याक्टेरिया) प्रोकारियोटिक हुन्छन् र तिनीहरूमा निश्चित न्युक्लियस हुँदैन।',
     hint: 'यसमा ब्याक्टेरियाहरू पर्छन्।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
 
   // --- CHAPTER 3: च्याउ (Biology) ---
@@ -101,7 +109,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'च्याउमा हरितकण हुँदैन र यसले सडेगलेका जैविक वस्तुहरूलाई कुहाएर खाना सोसेर प्राप्त गर्ने भएकाले यसलाई मृतोपजीवी भनिन्छ।',
     hint: 'यो मरेका र कुहिएका वस्तुहरूमा उम्रिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q3_2',
@@ -112,7 +121,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'च्याउ स्वास्थ्यका लागि निकै फाइदाजनक छ किनभने यसमा उच्च गुणस्तरको प्रोटिन, भिटामिन र खनिज तत्वहरू पाइन्छन्।',
     hint: 'यो एउटा पोषणयुक्त खाद्य पदार्थ हो।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q3_3',
@@ -123,7 +133,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'रातो च्याउ (गालोडर्मा) मा औषधीय गुण हुन्छ र यसलाई क्यान्सर लगायतका विभिन्न रोगको उपचारमा प्रयोग गरिन्छ।',
     hint: 'यसको रङ रातो हुन्छ र यो काठको ठुटामा उम्रिन्छ।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
   {
     id: 'q3_4',
@@ -134,7 +145,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'च्याउको हाइमेनियम तहमा प्रजननमा भाग नलिने बाँझो वा स्टेराइल कोषहरू हुन्छन् जसलाई प्याराफाइसिस (Paraphysis) भनिन्छ।',
     hint: 'यो बेसिडियमको बीचमा रहने स्टेराइल कोष हो।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 4: क्रम विकास (Biology) ---
@@ -147,7 +159,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'चार्ल्स डार्विनले सन् १८५९ मा आफ्नो पुस्तक "Origin of Species" मार्फत प्राकृतिक छनोटको सिद्धान्त प्रतिपादन गरेका थिए।',
     hint: 'उनी "HMS Beagle" जहाजमा यात्रा गरेका थिए।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q4_2',
@@ -158,7 +171,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'उत्पत्ति र आन्तरिक संरचना एउटै तर कार्य फरक भएका अङ्गहरूलाई सधर्मी अङ्ग भनिन्छ, जस्तै मानिसको हात र चराको पखेटा।',
     hint: 'यिनीहरूको भित्री हड्डीको संरचना मिल्दोजुल्दो हुन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q4_3',
@@ -169,7 +183,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'पत्रे चट्टान (Sedimentary Rock) तह-तह बनेर जम्मा हुने क्रममा मृत जीवहरूको अवशेष पुरिने हुनाले यसमा जीवावशेष पाइन्छ।',
     hint: 'यो तह-तह परेको चट्टान हो।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q4_4',
@@ -180,7 +195,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'कोई जीवको डिएनए वा वंशाणु संरचनामा अचानक र स्थायी रूपमा आउने परिवर्तनलाई उत्परिवर्तन (Mutation) भनिन्छ।',
     hint: 'यसलाई अंग्रेजीमा Mutation भनिन्छ।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 5: शारीरिक संरचना र जीवन प्रक्रिया (Biology) ---
@@ -193,7 +209,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'मृगौला (Kidney) ले रगतमा भएका हानीकारक र खेर जाने पदार्थहरू छानेर पिसाबको रूपमा बाहिर फाल्ने काम गर्छ।',
     hint: 'यो कम्मरको पछाडिपट्टि सिमीको दाना आकारको हुन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q5_2',
@@ -204,7 +221,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'धमनीहरू (Arteries) ले मुटुबाट अक्सिजनयुक्त शुद्ध रगत शरीरका विभिन्न अङ्गहरूमा पुर्‍याउँछन् (फोक्सो धमनी बाहेक)।',
     hint: 'यिनीहरूको भित्ता बाक्लो र लचिलो हुन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q5_3',
@@ -215,7 +233,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'मानव मुटुमा चारवटा कोठाहरू हुन्छन्: दुईवटा अरिकल (Auricles) र दुईवटा भेन्ट्रिकल (Ventricles)।',
     hint: 'दाहिने र देब्रे गरी माथिल्ला दुई र तल्ला दुई कोठा।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q5_4',
@@ -226,7 +245,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'हाम्रो रक्तनलीभित्र रगत बगिरहँदा नजम्नुको कारण कलेजोले उत्पादन गर्ने हेपारिन (Heparin) नामक एन्टिकोआगुलेन्ट हो।',
     hint: 'यो प्राकृतिक रूपमा रगत जम्न नदिने तत्व हो।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 6: प्रकृति र वातावरण (Biology) ---
@@ -239,7 +259,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'हरिया वनस्पतिहरूले सूर्यको प्रकाश प्रयोग गरी प्रकाश संश्लेषणद्वारा आफ्नो खाना आफैं बनाउने भएकाले यिनीहरूलाई उत्पादक भनिन्छ।',
     hint: 'यिनीहरूमा हरितकण हुन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q6_2',
@@ -250,7 +271,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'परिस्थितिक प्रणालीमा ऊर्जा जहिले पनि सूर्यबाट उत्पादक, त्यसपछि उपभोक्ता हुँदै एकतर्फी (Unidirectional) रूपमा मात्र बग्छ।',
     hint: 'ऊर्जा कहिल्यै उल्टो दिशामा फर्कन सक्दैन।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q6_3',
@@ -261,7 +283,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'मृत वनस्पति र जनावरको शरीरलाई कुहाएर सरल यौगिकमा परिणत गर्ने जीवहरूलाई विच्छेदक (Decomposers) भनिन्छ।',
     hint: 'यिनीहरूले प्रकृतिमा सरसफाइको काम गर्छन्।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q6_4',
@@ -272,7 +295,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'श्वासप्रश्वासले वायुमण्डलमा कार्बन डाइअक्साइड फाल्छ भने प्रकाश संश्लेषणले यसलाई सोसेर अक्सिजन फाल्छ, जसले कार्बन चक्र सन्तुलनमा रहन्छ।',
     hint: 'एउटा प्रक्रियाले अक्सिजन फाल्छ, अर्कोले कार्बन डाइअक्साइड।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
 
   // --- CHAPTER 7: बल र चाल (Physics) ---
@@ -285,7 +309,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'गाडी रोकिँदा यात्रीको तल्लो शरीर गाडीसँगै रोकिन्छ तर माथिल्लो शरीर गति इनर्सियाका कारण गतिमै रहन खोज्दा अगाडि ढल्किन्छ।',
     hint: 'इनर्सियाको एउटा प्रकार।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q7_2',
@@ -296,7 +321,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'न्युटनको दोस्रो नियम अनुसार बल (F) बराबर पिण्ड (m) र प्रवेग (a) को गुणनफल हुन्छ, अर्थात् F = ma।',
     hint: 'बल = पिण्ड × प्रवेग।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q7_3',
@@ -307,7 +333,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'वृत्ताकार चालमा गति स्थिर भए पनि वस्तुको दिशा पलपलमा परिवर्तन हुने भएकाले यसको वेग (Velocity) निरन्तर परिवर्तन भइरहन्छ।',
     hint: 'वृत्तमा घुम्दा दिशा सधैं बदलिन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q7_4',
@@ -318,7 +345,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'औसत गति = जम्मा पार गरेको दुरी / जम्मा लागेको समय = (२०+३०) / (२+२) = ५० / ४ = १२.५ मिटर प्रति सेकेन्ड।',
     hint: 'जम्मा दुरीलाई जम्मा समयले भाग गर्नुहोस्।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 8: सरल यन्त्र (Physics) ---
@@ -331,7 +359,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'कार्यक्षमता (Efficiency) = (MA / VR) × १००% = (४ / ५) × १००% = ८०%।',
     hint: 'MA लाई VR ले भाग गरेर १०० ले गुणन गर्नुहोस्।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q8_2',
@@ -342,7 +371,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'पुल्ली प्रणालीमा लोड धान्ने डोरीको खण्ड वा पुल्लीहरूको जम्मा सङ्ख्या नै उक्त प्रणालीको गति अनुपात (VR) सँग बराबर हुन्छ।',
     hint: 'पुल्लीको सङ्ख्या गन्नुहोस्।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q8_3',
@@ -353,7 +383,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'आदर्श वा काल्पनिक यन्त्रमा घर्षणका कारण ऊर्जा नष्ट नहुने हुनाले यसको कार्यक्षमता शतप्रतिशत (१००%) हुन्छ।',
     hint: 'इनपुट कार्य र आउटपुट कार्य बराबर हुन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q8_4',
@@ -364,7 +395,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'बल पाखुरा (Effort Arm) = १०० सेमी - २० सेमी = ८० सेमी। लोड पाखुरा (Load Arm) = २० सेमी। VR = बल पाखुरा / लोड पाखुरा = ८० / २० = ४।',
     hint: 'खन्तीको जम्मा लम्बाइबाट लोड दुरी घटाएर बल पाखुरा निकाल्नुहोस्।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 9: ऊर्जा (Physics) ---
@@ -377,7 +409,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'वस्तुलाई उचाइमा लैजाँदा यसको स्थान वा अवस्था परिवर्तनका कारण त्यसमा स्थितिजन्य ऊर्जा (Potential Energy = mgh) सञ्चित हुन्छ।',
     hint: 'यो उचाइसँग सम्बन्धित ऊर्जा हो।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q9_2',
@@ -388,7 +421,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'वस्तुमा यसको गतिको कारणले उत्पन्न हुने कार्य गर्न सक्ने क्षमतालाई गतिजन्य ऊर्जा (KE = 1/2 mv²) भनिन्छ।',
     hint: 'यो चाल वा गतिको कारणले हुने ऊर्जा हो।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q9_3',
@@ -399,7 +433,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'ऊर्जा संरक्षणको नियम अनुसार ब्रह्माण्डमा भएको जम्मा ऊर्जा स्थिर रहन्छ। यसलाई नष्ट वा सिर्जना गर्न सकिँदैन, केवल एक रूपबाट अर्को रूपमा बदल्न सकिन्छ।',
     hint: 'ऊर्जा सधैं रूप परिवर्तन गर्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q9_4',
@@ -410,7 +445,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'गतिजन्य ऊर्जा (KE) = 1/2 × m × v² = 1/2 × १० × २² = ५ × ४ = २० जुल (Joules)।',
     hint: 'सूत्र 1/2 mv² प्रयोग गर्नुहोस्।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 10: तरङ्ग (Physics) ---
@@ -423,7 +459,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'मानिसको कानले २० हर्ज (Hz) देखि २०,००० हर्ज (२० kHz) सम्मको आवृत्ति भएको ध्वनि मात्र सुन्न सक्छ।',
     hint: 'यसलाई सुन्न सकिने ध्वनिको सीमा भनिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q10_2',
@@ -434,7 +471,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'आवृत्ति (f) र आवर्तकाल (T) एक अर्काको व्युत्क्रमानुपातिक हुन्छन्, अर्थात् f = 1/T वा T = 1/f।',
     hint: 'एक सेकेन्डमा हुने कम्पन सङ्ख्या र एक कम्पन लाग्ने समय।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q10_3',
@@ -445,7 +483,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'तरङ्गको वेग (v) = आवृत्ति (f) × तरङ्ग लम्बाइ (λ) = ५०० × ०.७ = ३५० मिटर प्रति सेकेन्ड।',
     hint: 'v = f × λ सूत्र प्रयोग गर्नुहोस्।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
   {
     id: 'q10_4',
@@ -456,7 +495,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'हावामा ध्वनि तरङ्गहरू खाँदिएर (Compression) र खुकुलिएर (Rarefaction) अगाडि बढ्ने भएकाले यो अनुदैर्ध्य तरङ्ग (Longitudinal Wave) हो।',
     hint: 'यसमा माध्यमका कणहरू तरङ्ग बहने दिशामा कम्पन हुन्छन्।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 11: विद्युत (Physics) ---
@@ -469,7 +509,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'ओहमको नियम अनुसार निश्चित तापक्रममा परिपथमा बहने विद्युत धारा (I) उक्त परिपथको भोल्टेज वा विभवान्तर (V) सँग समानुपातिक हुन्छ (V = IR)।',
     hint: 'भोल्टेज बढाउँदा विद्युत धारा पनि बढ्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q11_2',
@@ -480,7 +521,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'अमिटर (Ammeter) लाई परिपथमा श्रेणीकरण (Series) मा जोडेर विद्युत धारा (करेन्ट) नाप्न प्रयोग गरिन्छ।',
     hint: 'यसको एकाइ एम्पियर (Ampere) हो।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q11_3',
@@ -491,7 +533,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'विद्युत प्रवाहमा अवरोध पुर्‍याउने गुणलाई प्रतिरोध (Resistance) भनिन्छ र यसको एस.आई. एकाइ ओहम (Ω) हो।',
     hint: 'यो ओहमको नियम पत्ता लगाउने वैज्ञानिकको नाममा राखिएको हो।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q11_4',
@@ -502,7 +545,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'समानान्तर जोडानमा कुल प्रतिरोध 1/R = 1/R₁ + 1/R₂ = 1/६ + 1/१२ = ३/१२ = १/४। त्यसैले कुल प्रतिरोध R = ४ ओहम हुन्छ।',
     hint: '1/R = 1/R₁ + 1/R₂ सुत्र प्रयोग गर्नुहोस्।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 12: ब्रह्माण्ड (EarthSpace) ---
@@ -515,7 +559,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'बुध (Mercury) सौर्यमण्डलको पहिलो ग्रह हो जुन सूर्यको सबैभन्दा नजिक छ र आकारमा पनि सबैभन्दा सानो छ।',
     hint: 'यसको नाम "बुधबार" सँग मिल्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q12_2',
@@ -526,7 +571,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'शुक्रको वायुमण्डलमा ९६% भन्दा बढी कार्बन डाइअक्साइड हुन्छ, जसले हरितगृह प्रभाव (Greenhouse Effect) सिर्जना गरी यसलाई सौर्यमण्डलकै सबैभन्दा तातो ग्रह बनाउँछ।',
     hint: 'यसले अत्यधिक ताप सोसेर राख्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q12_3',
@@ -537,7 +583,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'हाम्रो सौर्यमण्डल मिल्की वे (Milky Way) आकाशगंगामा अवस्थित छ, जुन एउटा घुमाउरो (Spiral) आकाशगंगा हो।',
     hint: 'नेपालीमा यसलाई "मन्दाकिनी" पनि भनिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q12_4',
@@ -548,7 +595,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'सूर्य र पृथ्वीबीचको दुरी लगभग १५ करोड किमी छ। प्रकाशको वेग ३ लाख किमी/सेकेन्ड भएकाले प्रकाश आइपुग्न लगभग ५०० सेकेन्ड अर्थात् ८ मिनेट २० सेकेन्ड लाग्छ।',
     hint: 'यो लगभग ५०० सेकेन्ड हो।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
 
   // --- CHAPTER 13: सूचना तथा सञ्चार प्रविधि (ICT) ---
@@ -561,7 +609,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'RAM कम्प्युटरको अस्थिर (Volatile) मेमोरी हो, जसले कम्प्युटर चलिरहेका बेला डाटा अस्थायी रूपमा भण्डारण गर्छ। कम्प्युटर बन्द भएपछि यसको डाटा हराउँछ।',
     hint: 'कम्प्युटर बन्द गर्दा यसमा भएको डाटा मेटिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q13_2',
@@ -572,7 +621,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'राउटर (Router) ले विभिन्न नेटवर्कहरूलाई जोड्ने काम गर्छ र डेटा प्याकेटहरू पठाउन सबैभन्दा उत्तम र छोटो बाटो (Routing Table मार्फत) तय गर्छ।',
     hint: 'वाइफाई चलाउन घरमा यो उपकरण राखिन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q13_3',
@@ -583,7 +633,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'फायरवाल (Firewall) एक सुरक्षा प्रणाली हो जसले आउने र जाने नेटवर्क ट्राफिकलाई निगरानी गर्छ र शंकास्पद डेटालाई रोक्छ।',
     hint: 'यो कम्प्युटर नेटवर्कको सुरक्षात्मक "भित्ता" हो।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q13_4',
@@ -594,7 +645,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'नेपालमा साइबर अपराध सम्बन्धी मुद्दाहरू विद्युतीय कारोबार ऐन, २०६३ (Electronic Transactions Act, 2063) को दफा ४७ र ४८ अनुसार कारबाही गरिन्छ।',
     hint: 'यो ऐन २०६३ सालमा जारी भएको हो।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 14: परमाणु संरचना र रासायनिक बन्ड (Chemistry) ---
@@ -607,7 +659,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'परमाणुको केन्द्र वा न्युक्लियसमा प्रोटोन (धनात्मक) र न्युट्रोन (तटस्थ) कणहरू हुन्छन्, जबकि इलेक्ट्रोनहरू बाहिर अक्षमा घुम्छन्।',
     hint: 'इलेक्ट्रोनहरू केन्द्र बाहिर घुमिरहेका हुन्छन्।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q14_2',
@@ -618,7 +671,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'पहिलो शेलमा २, दोस्रोमा ८ र बाँकी ५ इलेक्ट्रोन तेस्रो शेलमा रहन्छन्। यो फस्फोरस (P) को इलेक्ट्रोन विन्यास २, ८, ५ हो।',
     hint: 'तीनवटा अक्षहरूमा क्रमशः २, ८, र ५ इलेक्ट्रोनहरू बाँडिन्छन्।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q14_3',
@@ -629,7 +683,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'सोडियमले एक इलेक्ट्रोन क्लोरिनलाई दिन्छ, जसले गर्दा सोडियम पोजिटिभ र क्लोरिन नेगेटिभ आयन बन्छन्। यिनीहरू बीच आयोनिक बन्ड बन्छ।',
     hint: 'यसमा इलेक्ट्रोन पूर्ण रूपमा स्थानान्तरण हुन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q14_4',
@@ -640,7 +695,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'बोर-बरी नियम (2n² सूत्र) अनुसार दोस्रो शेल (n = २) मा बढीमा २ × (२)² = ८ वटा इलेक्ट्रोन अटाउन सक्छन्।',
     hint: '2n² सूत्र प्रयोग गर्नुहोस् जहाँ n = २।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
 
   // --- CHAPTER 15: रासायनिक प्रतिक्रिया (Chemistry) ---
@@ -653,7 +709,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'फलामले ओसिलो हावामा भएको अक्सिजनसँग प्रतिक्रिया गरी आइरन अक्साइड (खिया) बनाउँछ। यो एक संयोजन र अक्सिकरण प्रतिक्रिया हो।',
     hint: 'यसमा फलाम र अक्सिजन जोडिन्छन्।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q15_2',
@@ -664,7 +721,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'उत्प्रेरक (Catalyst) ले रासायनिक प्रतिक्रियामा भाग नलिई यसको दरलाई परिवर्तन गर्छ, जस्तै अक्सिजन बनाउँदा म्यागनिज डाइअक्साइड।',
     hint: 'यो रासायनिक प्रतिक्रियाको गति तीव्र बनाउन मद्दत गर्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q15_3',
@@ -675,7 +733,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'अम्ल (Acid) र क्षार (Base) बीचको प्रतिक्रियाबाट तटस्थ यौगिक लवण (Salt) र पानी (Water) बन्छ। यसलाई तटस्थीकरण प्रतिक्रिया भनिन्छ।',
     hint: 'यसले पीएच (pH) लाई ७ को नजिक ल्याउँछ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q15_4',
@@ -686,7 +745,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'रासायनिक प्रतिक्रियाक र उत्पादित पदार्थको कुल पिण्ड जहिले पनि बराबर हुनुपर्छ भन्ने नियम अनुसार समीकरण सन्तुलन गरिन्छ।',
     hint: 'प्रतिक्रिया अघि र पछिको कुल तौल बराबर हुनुपर्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
 
   // --- CHAPTER 16: केही ग्याँसहरू (Chemistry) ---
@@ -699,7 +759,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'प्रयोगशालामा पोटासियम क्लोरेट (KClO₃) र म्यागनिज डाइअक्साइड उत्प्रेरकको मिश्रणलाई तताएर अक्सिजन ग्याँस तयार पारिन्छ।',
     hint: 'यसको रासायनिक सूत्र KClO₃ हो।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q16_2',
@@ -710,7 +771,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'कार्बन डाइअक्साइड (CO₂) ग्याँस हावाभन्दा गरुङ्गो हुन्छ र यसले बलेको आगो निभाउन मद्दत गर्छ, त्यसैले यसलाई अग्निनियन्त्रकमा प्रयोग गरिन्छ।',
     hint: 'यो ग्याँस अग्निनियन्त्रक यन्त्रमा प्रयोग गरिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q16_3',
@@ -721,7 +783,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'नाइट्रोजन अक्रिय ग्याँस भएकाले खाद्य पदार्थहरू अक्सिडाइज हुनबाट बचाउन आलु चिप्स आदिको प्याकेटमा हावा भरेर बन्द गर्न प्रयोग गरिन्छ।',
     hint: 'यसले चिप्स बिग्रन वा कुहिन दिँदैन।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q16_4',
@@ -732,7 +795,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'प्रयोगशालामा मार्बलका टुक्रा (CaCO₃) सँग फिक्का हाइड्रोक्लोरिक अम्ल (HCl) को प्रतिक्रिया गराएर कार्बन डाइअक्साइड ग्याँस बनाइन्छ।',
     hint: 'यसको सूत्र HCl हो।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 17: धातु र अधातु (Chemistry) ---
@@ -745,7 +809,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'पारो वा मर्करी (Mercury - Hg) धातु भए पनि यसको पग्लने बिन्दु निकै कम भएकाले कोठाको तापक्रममा यो तरल अवस्थामा रहन्छ।',
     hint: 'यो थर्मामिटर भित्र राखिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q17_2',
@@ -756,7 +821,8 @@ export const QUESTIONS = [
     correctAnswer: 2,
     explanation: 'ग्राफाइट कार्बनको एक अपरूप हो। यसमा स्वतन्त्र इलेक्ट्रोनहरू हुने भएकाले यो अधातु भए पनि विद्युतको सुचालक हुन्छ।',
     hint: 'पेन्सिलको सिसा (Lead) मा यसको प्रयोग हुन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q17_3',
@@ -767,7 +833,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'तामा विद्युतको राम्रो सुचालक र तुलनात्मक रूपमा सस्तो भएकाले विद्युतीय प्रसारणका तारहरू बनाउन बढी प्रयोग गरिन्छ।',
     hint: 'यसको विद्युत प्रतिरोध कम हुन्छ र यो सजिलै बंग्याउन सकिन्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q17_4',
@@ -778,7 +845,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'फलाममा जंग लाग्नबाट बचाउन र बलियो बनाउन क्रोमियम (Chromium) र निकेल (Nickel) मिसाएर स्टेनलेस स्टिल बनाइन्छ।',
     hint: 'क्रोमियमले खिया लाग्न दिँदैन।',
-    difficulty: 'Hard'
+    difficulty: 'Hard',
+    classLevel: 9
   },
 
   // --- CHAPTER 18: कार्बन र यसका यौगिकहरू (Chemistry) ---
@@ -791,7 +859,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'कार्बन र हाइड्रोजन तत्वहरू मात्र मिलेर बनेका यौगिकहरूलाई हाइड्रोकार्बन भनिन्छ, जस्तै मिथेन (CH₄)।',
     hint: 'यसमा केवल कार्बन (C) र हाइड्रोजन (H) मात्र हुन्छन्।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q18_2',
@@ -802,7 +871,8 @@ export const QUESTIONS = [
     correctAnswer: 0,
     explanation: 'मिथेन धापिलो वा हिलो ठाउँमा कुहिएका पातहरूबाट निस्कने भएकाले यसलाई "मार्श ग्याँस" (Marsh Gas) भनिन्छ।',
     hint: 'यो दलदले वा धापिलो क्षेत्रमा बढी पाइन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q18_3',
@@ -813,7 +883,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'एल्किन समूहमा कार्बन-कार्बन बीच दोहोरो बन्धन (=) हुन्छ र यसको सामान्य सूत्र CnH2n हो।',
     hint: 'यसमा हाइड्रोजनको सङ्ख्या कार्बनको दोब्बर हुन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q18_4',
@@ -824,7 +895,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'एउटै तत्वका फरक-फरक भौतिक रूपहरूलाई अपरूप (Allotropes) भनिन्छ। कार्बनका अपरूप हीरा, ग्राफाइट र फुलरिन हुन्।',
     hint: 'हीरा र ग्राफाइट यसका उदाहरण हुन्।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
 
   // --- CHAPTER 19: कृषि क्षेत्रमा प्रयोग हुने पदार्थहरू (Chemistry) ---
@@ -837,7 +909,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'नाइट्रोजनयुक्त मल (जस्तै युरिया) ले बिरुवामा प्रोटिन र क्लोरोफिल बनाउन मद्दत गरी पात र डाँठलाई हरियो र छिटो बढाउँछ।',
     hint: 'युरिया यसको मुख्य उदाहरण हो।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q19_2',
@@ -848,7 +921,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'रासायनिक मलको अनियन्त्रित प्रयोगले माटोको अम्लीयपना वा क्षारीयपना बढाई माटोको गुणस्तर र उत्पादन क्षमता नष्ट गर्छ।',
     hint: 'यसले माटोको पीएच (pH) सन्तुलन बिगार्छ।',
-    difficulty: 'Easy'
+    difficulty: 'Easy',
+    classLevel: 9
   },
   {
     id: 'q19_3',
@@ -859,7 +933,8 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'बजारमा पाइने युरिया मलमा करिब ४६ प्रतिशत नाइट्रोजन तत्व पाइन्छ, जुन बिरुवाका लागि अति आवश्यक छ।',
     hint: 'यो आधा भन्दा केही कम (४६%) हुन्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   },
   {
     id: 'q19_4',
@@ -870,6 +945,7 @@ export const QUESTIONS = [
     correctAnswer: 1,
     explanation: 'फस्फोरसयुक्त मल (जस्तै सुपरफस्फेट) ले बिरुवाको जराको विकास गराउन, फल लाग्न र बीउ परिपक्व हुन मद्दत गर्छ।',
     hint: 'यसले बीउ र फल लाग्ने प्रक्रिया तीव्र पार्छ।',
-    difficulty: 'Medium'
+    difficulty: 'Medium',
+    classLevel: 9
   }
 ];

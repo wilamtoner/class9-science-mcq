@@ -2,7 +2,26 @@ const STORAGE_KEYS = {
   SETTINGS: 'c9_science_settings',
   QUIZ_HISTORY: 'c9_science_history',
   BOOKMARKS: 'c9_science_bookmarks',
-  STATS: 'c9_science_stats'
+  STATS: 'c9_science_stats',
+  SELECTED_CLASS: 'c9_science_selected_class'
+};
+
+// Class selection
+export const getSelectedClass = () => {
+  try {
+    const data = localStorage.getItem(STORAGE_KEYS.SELECTED_CLASS);
+    return data ? parseInt(data, 10) : null; // null means not yet selected
+  } catch (e) {
+    return null;
+  }
+};
+
+export const saveSelectedClass = (classLevel) => {
+  try {
+    localStorage.setItem(STORAGE_KEYS.SELECTED_CLASS, String(classLevel));
+  } catch (e) {
+    console.error('Failed to save selected class:', e);
+  }
 };
 
 // Default app settings

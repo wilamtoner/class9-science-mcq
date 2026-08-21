@@ -8,7 +8,8 @@ export default function QuizEngine({
   bookmarks,
   onToggleBookmark,
   onFinishQuiz,
-  onExitQuiz
+  onExitQuiz,
+  selectedClass
 }) {
   // Filter questions based on configuration
   const [questions, setQuestions] = useState([]);
@@ -20,7 +21,7 @@ export default function QuizEngine({
   const [startTime] = useState(Date.now());
 
   useEffect(() => {
-    let pool = getAllQuestions();
+    let pool = getAllQuestions(selectedClass || 9);
     if (quizConfig.chapterId) {
       pool = pool.filter(q => q.chapterId === quizConfig.chapterId);
     } else if (quizConfig.filterSubject && quizConfig.filterSubject !== 'all') {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Play, Clock, Sparkles, Zap, Flame, ShieldAlert, Award, ArrowRight, BookOpen, CheckCircle, Orbit, Cpu } from 'lucide-react';
 import { CHAPTERS } from '../data/chapters';
 
-export default function Dashboard({ onStartQuiz, onNavigate, stats, bookmarkCount }) {
+export default function Dashboard({ onStartQuiz, onNavigate, stats, bookmarkCount, selectedClass }) {
   const overallAccuracy = stats.totalAttempted > 0 
     ? Math.round((stats.totalCorrect / stats.totalAttempted) * 100) 
     : 0;
@@ -48,7 +48,7 @@ export default function Dashboard({ onStartQuiz, onNavigate, stats, bookmarkCoun
         
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', opacity: 0.9, marginBottom: '6px' }}>
           <Sparkles size={14} color="#fde047" />
-          <span style={{ fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.5px' }}>विज्ञान र प्रविधि - कक्षा ९</span>
+          <span style={{ fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.5px' }}>विज्ञान र प्रविधि - कक्षा {selectedClass || 9}</span>
         </div>
         
         <h2 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '8px' }}>
@@ -56,7 +56,7 @@ export default function Dashboard({ onStartQuiz, onNavigate, stats, bookmarkCoun
         </h2>
         
         <p style={{ fontSize: '0.88rem', opacity: 0.9, lineHeight: '1.4', marginBottom: '16px' }}>
-          भौतिक, रसायन, जीव विज्ञान, पृथ्वी र अन्तरिक्ष, तथा सूचना प्रविधिका १९ वटै एकाइका प्रश्नहरू अभ्यास गर्नुहोस्। शतप्रतिशत अफलाइन उपलब्ध!
+          भौतिक, रसायन, जीव विज्ञान, पृथ्वी र अन्तरिक्ष, तथा सूचना प्रविधिका एकाइका प्रश्नहरू अभ्यास गर्नुहोस्। शतप्रतिशत अफलाइन उपलब्ध!
         </p>
 
         <div style={{ display: 'flex', gap: '10px' }}>
