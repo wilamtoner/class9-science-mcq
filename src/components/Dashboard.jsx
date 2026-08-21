@@ -246,6 +246,18 @@ export default function Dashboard({ onStartQuiz, onNavigate, stats, bookmarkCoun
         </div>
       </div>
 
+      {/* App Feature Showcase Banner */}
+      <div className="card" style={{ padding: '14px', overflow: 'hidden' }}>
+        <h3 style={{ fontSize: '0.98rem', fontWeight: '700', marginBottom: '10px', color: 'var(--text-primary)' }}>
+          विज्ञान साथी विजय - मुख्य विशेषताहरू
+        </h3>
+        <img 
+          src="/promo_banner.jpg" 
+          alt="Class 9 Science Smart Study Features" 
+          style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-md)', display: 'block', objectFit: 'cover' }}
+        />
+      </div>
+
     </div>
   );
 }

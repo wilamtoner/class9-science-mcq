@@ -42,6 +42,13 @@
       "type": "image/jpeg",
       "form_factor": "narrow",
       "label": "Interactive Science Quiz Mode"
+    },
+    {
+      "src": "/promo_banner.jpg",
+      "sizes": "1024x682",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Class 9 Science Smart Study App Features"
     }
   ],
   "shortcuts": [
