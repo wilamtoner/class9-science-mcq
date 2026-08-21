@@ -7,7 +7,7 @@ export const CHAPTERS = [
     subject: 'Biology',
     description: 'वैज्ञानिक अध्ययन प्रक्रिया, परिकल्पना, मापन, एकाइ र वैज्ञानिक सङ्केत सम्बन्धी आधारभूत ज्ञान।',
     icon: 'Activity',
-    questionCount: 4,
+    questionCount: 27,
     classLevel: 9
   },
   {
@@ -17,7 +17,7 @@ export const CHAPTERS = [
     subject: 'Biology',
     description: 'पाँच जगत् (Monera, Protista, Fungi, Plantae, Animalia) वर्गीकरण प्रणाली र वैज्ञानिक नामकरण।',
     icon: 'Dna',
-    questionCount: 4,
+    questionCount: 27,
     classLevel: 9
   },
   {
@@ -27,7 +27,7 @@ export const CHAPTERS = [
     subject: 'Biology',
     description: 'च्याउको शारीरिक बनोट, फाइदाहरू, खेती गर्ने तरिका र बेसिडियोस्पोर संरचना।',
     icon: 'Microscope',
-    questionCount: 4,
+    questionCount: 27,
     classLevel: 9
   },
   {
@@ -37,7 +37,7 @@ export const CHAPTERS = [
     subject: 'Biology',
     description: 'डार्विन र लेमार्कको सिद्धान्त, जीवावशेष, उत्परिवर्तन र जीवनको उत्पत्ति।',
     icon: 'Sparkles',
-    questionCount: 4,
+    questionCount: 27,
     classLevel: 9
   },
   {
@@ -47,7 +47,7 @@ export const CHAPTERS = [
     subject: 'Biology',
     description: 'मानव शरीरका प्रणालीहरू, रक्तसञ्चार, कोष र तन्तुहरूको संरचना।',
     icon: 'Heart',
-    questionCount: 4,
+    questionCount: 27,
     classLevel: 9
   },
   {
@@ -57,7 +57,7 @@ export const CHAPTERS = [
     subject: 'Biology',
     description: 'परिस्थितिक प्रणाली (Ecosystem), खाद्य चक्र र वातावरणीय सन्तुलन।',
     icon: 'Globe',
-    questionCount: 4,
+    questionCount: 27,
     classLevel: 9
   },
 
@@ -69,7 +69,7 @@ export const CHAPTERS = [
     subject: 'Physics',
     description: 'न्युटनका चालका नियमहरू, प्रवेग, गति र गतिशीलता सम्बन्धी समीकरणहरू।',
     icon: 'Activity',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -79,7 +79,7 @@ export const CHAPTERS = [
     subject: 'Physics',
     description: 'लिभर, पुल्ली, छड्के सतह, गति अनुपात (VR) र यान्त्रिक फाइदा (MA)।',
     icon: 'Zap',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -89,7 +89,7 @@ export const CHAPTERS = [
     subject: 'Physics',
     description: 'शक्ति संरक्षणको नियम, गतिजन्य र स्थितिजन्य ऊर्जा, कार्य र सामर्थ्य।',
     icon: 'Flame',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -99,7 +99,7 @@ export const CHAPTERS = [
     subject: 'Physics',
     description: 'आवाजको फैलावट, अनुदैर्ध्य र अनुप्रस्थ तरङ्ग, आवृत्ति र ध्वनिको वेग।',
     icon: 'Volume2',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -109,7 +109,7 @@ export const CHAPTERS = [
     subject: 'Physics',
     description: 'ओहमको नियम, विद्युत परिपथ, प्रतिरोध र घरेलु वाइरिङ प्रणाली।',
     icon: 'Zap',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
 
@@ -121,7 +121,7 @@ export const CHAPTERS = [
     subject: 'EarthSpace',
     description: 'सौर्यमण्डल, ताराहरू, आकाशगंगा र अन्तरीक्ष अन्वेषणको इतिहास।',
     icon: 'Orbit',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -131,7 +131,7 @@ export const CHAPTERS = [
     subject: 'ICT',
     description: 'कम्प्युटर नेटवर्किङ, इन्टरनेट, साइबर सुरक्षा र डिजिटल सञ्चार प्रविधि।',
     icon: 'Cpu',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
 
@@ -143,7 +143,7 @@ export const CHAPTERS = [
     subject: 'Chemistry',
     description: 'परमाणुको मोडेल, इलेक्ट्रोन विन्यास, भ्यालेन्सी र रासायनिक बन्धन।',
     icon: 'Atom',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -153,7 +153,7 @@ export const CHAPTERS = [
     subject: 'Chemistry',
     description: 'रासायनिक समीकरणहरू, सन्तुलन, प्रतिक्रियाका प्रकार र दर।',
     icon: 'FlaskConical',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -163,7 +163,7 @@ export const CHAPTERS = [
     subject: 'Chemistry',
     description: 'अक्सिजन, कार्बन डाइअक्साइड र नाइट्रोजन ग्याँसको प्रयोगशाला तयारी र गुणहरू।',
     icon: 'Flame',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -173,7 +173,7 @@ export const CHAPTERS = [
     subject: 'Chemistry',
     description: 'धातु र अधातुका भौतिक तथा रासायनिक गुणहरू र तिनीहरूको औद्योगिक प्रयोग।',
     icon: 'Award',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -183,7 +183,7 @@ export const CHAPTERS = [
     subject: 'Chemistry',
     description: 'हाइड्रोकार्बन, एल्केन, एल्किन, एल्काइन र कार्बनका विभिन्न रूपहरू (अपरूपता)।',
     icon: 'Atom',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   },
   {
@@ -193,7 +193,7 @@ export const CHAPTERS = [
     subject: 'Chemistry',
     description: 'रासायनिक मल, कीटनाशक औषधीहरू र कृषि उत्पादकत्व बढाउने रासायनिक तत्वहरू।',
     icon: 'Wheat',
-    questionCount: 4,
+    questionCount: 26,
     classLevel: 9
   }
 ];

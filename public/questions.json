@@ -1,4 +1,4 @@
-export const QUESTIONS = [
+[
   {
     "id": "q1_1",
     "chapterId": "ch1",
@@ -8999,4 +8999,4 @@ export const QUESTIONS = [
     "classLevel": 9,
     "sourceType": "original_question_based_on_topic"
   }
-];
+]
