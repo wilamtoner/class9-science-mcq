@@ -3,6 +3,38 @@ import { Bookmark, CheckCircle2, XCircle, HelpCircle, ArrowLeft, ArrowRight, Clo
 import { getAllQuestions } from '../utils/questionsStore';
 import { CHAPTERS } from '../data/chapters';
 
+// Utility function to shuffle an array (Fisher-Yates)
+const shuffleArray = (array) => {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
+// Utility function to randomize options of a question and update correctAnswer index
+const randomizeQuestionOptions = (question) => {
+  if (!question || !Array.isArray(question.options) || question.options.length === 0) {
+    return question;
+  }
+
+  const optionsWithMeta = question.options.map((optText, index) => ({
+    text: optText,
+    isCorrect: index === question.correctAnswer
+  }));
+
+  const shuffledOptions = shuffleArray(optionsWithMeta);
+  const newOptions = shuffledOptions.map(item => item.text);
+  const newCorrectAnswer = shuffledOptions.findIndex(item => item.isCorrect);
+
+  return {
+    ...question,
+    options: newOptions,
+    correctAnswer: newCorrectAnswer >= 0 ? newCorrectAnswer : 0
+  };
+};
+
 export default function QuizEngine({
   quizConfig, // { mode: 'practice' | 'exam', chapterId?, filterSubject?, questionIds? }
   bookmarks,
@@ -30,15 +62,23 @@ export default function QuizEngine({
       pool = pool.filter(q => quizConfig.questionIds.includes(q.id));
     }
 
-    // Shuffle questions for variety
-    const shuffled = pool.sort(() => 0.5 - Math.random());
-    const selectedList = shuffled.slice(0, quizConfig.limit || 15);
-    setQuestions(selectedList);
+    // Shuffle questions for variety using Fisher-Yates
+    const shuffledPool = shuffleArray(pool);
+    const selectedList = shuffledPool.slice(0, quizConfig.limit || 15);
+
+    // Randomize answer options for each question
+    const randomizedQuestions = selectedList.map(randomizeQuestionOptions);
+
+    setQuestions(randomizedQuestions);
+    setCurrentIndex(0);
+    setSelectedAnswers({});
+    setShowExplanation({});
+    setShowHint(false);
 
     if (quizConfig.mode === 'exam') {
       setTimeLeft((quizConfig.limit || selectedList.length) * 60); // 1 minute per question
     }
-  }, [quizConfig]);
+  }, [quizConfig, selectedClass]);
 
   // Countdown timer for Exam Mode
   useEffect(() => {
