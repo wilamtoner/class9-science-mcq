@@ -1,5 +1,5 @@
 {
-  "id": "/",
+  "id": "com.class9.sciencemcq",
   "short_name": "Class 9 Science",
   "name": "Class 9 Science MCQ Master",
   "description": "Offline Class 9 Science Multiple Choice Questions & Practice Engine for Physics, Chemistry, and Biology.",
@@ -60,7 +60,7 @@
       "sizes": "1024x682",
       "type": "image/jpeg",
       "form_factor": "wide",
-      "label": "Class 9 Science Smart Study Feature Overview"
+      "label": "Class 9 Science Smart Study App Features"
     }
   ],
   "shortcuts": [
