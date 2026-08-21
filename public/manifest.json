@@ -1,22 +1,63 @@
 {
+  "id": "/",
   "short_name": "Class 9 Science",
   "name": "Class 9 Science MCQ Master",
-  "description": "Offline Class 9 Science Multiple Choice Questions & Practice Engine",
-  "icons": [
-    {
-      "src": "icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
+  "description": "Offline Class 9 Science Multiple Choice Questions & Practice Engine for Physics, Chemistry, and Biology.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait",
   "background_color": "#0f172a",
   "theme_color": "#3b82f6",
-  "display": "standalone",
-  "orientation": "portrait"
+  "dir": "ltr",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "categories": ["education", "books", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot1.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Class 9 Science MCQ Dashboard"
+    },
+    {
+      "src": "/screenshot2.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Interactive Science Quiz Mode"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Practice Quiz",
+      "short_name": "Quiz",
+      "description": "Start a quick science practice quiz",
+      "url": "/?tab=quiz",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Browse Chapters",
+      "short_name": "Chapters",
+      "description": "Browse Science Chapters",
+      "url": "/?tab=chapters",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
 }
